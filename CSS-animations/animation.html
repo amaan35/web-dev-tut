@@ -1,0 +1,83 @@
+<html>
+	<head>
+		<title>CSS animations</title>
+		<style type="text/css">
+			@keyframes colorChange{
+				0%{
+					background: red;
+					left: 0px;
+					top: 0px;
+				}
+				25%{
+					background: blue;
+					left: 300px;
+					top: 0px;
+				}
+				50%{
+					background: green;
+					left: 300px;
+					top: 300px;
+				}
+				75%{
+					background: pink;
+					left: 0px;
+					top: 300px;
+				}
+				100%{
+					background: black;
+					left: 0px;
+					top: 0px;
+				}
+			}
+			.main{
+				width: 300px;
+				height: 300px;
+				animation-name: colorChange;
+				animation-duration: 3s;
+				animation-delay: 2s;
+				animation-iteration-count: infinite;
+				position: relative;
+/*				animation: colorChange 3s 2s infinite;*/
+			}
+			@keyframes truckLeftToRight{
+				0%{
+					left: -200px;
+				}
+				100%{
+					left: 120%;
+				}
+			}
+			@keyframes wheelrotate{
+				0%{
+					transform: rotate(0deg);
+				}
+				100%{
+					transform: rotate(360deg);
+				}
+			}
+			.truck{
+				position: fixed;
+				bottom: 0px;
+				left: -200px;
+				animation: truckLeftToRight 10s 0s infinite linear;
+			}
+			.wheel-outer{
+				display: flex;
+				justify-content: space-around;
+			}
+			.wheel-outer img{
+				animation: wheelrotate 3s 0s infinite linear;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="main"></div>
+		<div class="truck">
+			<img src="truck-1.png">
+			<div class="wheel-outer">
+				<img src="wheel.png"/>
+				<img src="wheel.png"/>
+			</div>
+		</div>
+	</body>
+</html>
