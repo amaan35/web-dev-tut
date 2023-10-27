@@ -1,2 +1,2 @@
 # web-dev-tut
-tutorials done to learn, understand and practice various tags of HTML and CSS
+tutorials done to learn, understand and practice various tags of HTML and Tailwind CSS
