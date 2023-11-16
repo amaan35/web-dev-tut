@@ -3,8 +3,10 @@
         background-color: rgb(200, 0, 0);
         color: white;
         border: none;
-        height: 35px;
-        width: 110px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
         border-radius: 2px;
         cursor: pointer;
         margin-right: 9px;
@@ -18,12 +20,14 @@
     }
     .join-button{
         background-color: white;
-        border: rgb(90, 90, 249);
+        border: rgb(68, 68, 250);
         border-style: solid;
-        color: rgb(90, 90, 249);
+        color: rgb(68, 68, 250);
         border-width: 1px;
-        height: 35px;
-        width: 60px;
+        padding-top: 9px;
+        padding-bottom: 9px;
+        padding-left: 15px;
+        padding-right: 15px;
         border-radius: 2px;
         cursor: pointer;
         margin-right: 9px;
@@ -38,20 +42,60 @@
     }
     .tweet-button{
         background-color: rgb(90, 172, 249);
-        height: 30px;
         color: white;
         border: rgb(90, 172, 249);
-        border-radius: 15px;
-        width: 75px;
+        border-radius: 20px;
+        padding-top: 9px;
+        padding-bottom: 9px;
+        padding-left: 15px;
+        padding-right: 15px;
         font-weight: bold;
         font-size: 15px;
         cursor: pointer;
         transition: box-shadow 200ms;
+        vertical-align: top;
     }
     .tweet-button:hover{
         box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.15);
+    }
+    .back-next-button{
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 15px;
+        cursor: pointer;
+        margin-right: 10px;
+    }
+    .link-tag{
+        font-size: 20px;
+        margin-right: 10px;
+    }
+    .stretch{
+        background-color: green;
+        border: none;
+        border-radius: 5px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        color: white;
+        font-size: 15px;
+        vertical-align: top;
+        transition: font-size 500ms;
+    }
+    .stretch:hover{
+        font-size: 25px;
     }
 </style>
 <button class="subscribe-button">SUBSCRIBE</button>
 <button class="join-button">JOIN</button>
 <button class="tweet-button">Tweet</button>
+<button class="back-next-button">Back</button>
+<a class="link-tag" href="">1</a>
+<a class="link-tag" href="">2</a>
+<a class="link-tag" href="">3</a>
+<a class="link-tag" href="">4</a>
+<a class="link-tag" href="">5</a>
+<button class="back-next-button">Next</button>
+<button class="stretch">Stretch</button>
