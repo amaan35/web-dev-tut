@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DOM</title>
+        <style>
+            
+        </style>
+    </head>
+    
+    <body>
+        <button>hello</button>
+        <button class="js-button">second button</button>
+        <script>
+            //DOM combines JavaScript and HTML together
+            console.log(document.title);
+            document.title = 'Changed';
+            console.log(document.body);
+            console.log(document.querySelector('button'));
+            const secondButton = document.querySelector('.js-button');
+            console.log(secondButton);
+            
+            //built in object
+            // document.body.innerHTML = 'hello';
+            // document.title = 'good job';
+        </script>
+    </body>
+</html>
