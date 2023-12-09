@@ -4,11 +4,13 @@ import Hello from './components/Hello';
 import Welcome from './components/Welcome';
 import Message from './components/Message';
 import Counter from './components/Counter';
+import Student from './components/Student';
 
 function App() {
   return (
     <div className="App">
-      <Counter/>
+      <Student name="Amaan Ali" age={22}/>
+      {/* <Counter/> */}
       {/* <Message/> */}
       {/* using functional component  */}
       {/* <Hello name="Bruce" heroName="Batman">
