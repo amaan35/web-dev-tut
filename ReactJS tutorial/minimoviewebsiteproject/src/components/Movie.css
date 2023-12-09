@@ -1,0 +1,17 @@
+.movie{
+    background-color: rgb(210, 210, 210);
+    color: black;
+    border: 1px solid gray;
+    text-align: start;
+    padding: 10px;
+    width: 15%;
+    margin: 10px;
+}
+
+.title{
+    font-weight: bold;
+}
+
+.movie img {
+    width: 100%;
+}
