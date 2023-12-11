@@ -1,0 +1,29 @@
+.App {
+  text-align: center;
+}
+
+.header{
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  width: 100%;
+  background-color: black;
+  color: white;
+}
+
+.nav{
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  cursor: pointer;
+}
+
+.data-object{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: lightblue;
+  margin: 10px;
+  cursor: pointer;
+}
