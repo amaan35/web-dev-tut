@@ -19,7 +19,8 @@ function App() {
   }*/
 
   //To understand use of useEffect hook
-  /*const [resourceType, setResourceType] = useState("posts");
+  /*
+  const [resourceType, setResourceType] = useState("posts");
   const [items, setItems] = useState([]);
   useEffect(() => {
     fetch(`https://jsonplaceholder.typicode.com/${resourceType}`)
