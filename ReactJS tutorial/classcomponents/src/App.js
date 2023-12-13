@@ -4,17 +4,21 @@ import Welcome from './components/Welcome';
 import React from 'react';
 
 class App extends React.Component {
-  // constructor(props){
-  //   super(props);
-  //   this.state = {
-  //     counter : 0
-  //   }
-  // }
+  constructor(props){
+    super(props);
+    this.state = {
+      counter : 0
+    }
 
-  // increment(){
-  //   this.setState((prevState)=>({counter: prevState.counter+1}))
-  // }
+    this.increment = this.increment.bind(this);
+  }
 
+  increment(){
+    this.setState((prevState)=>({counter: prevState.counter+1}))
+  }
+
+  //To understand class components without constructor 
+  /*
   state = {
     name: 'Amaan',
     count: 0,
@@ -44,18 +48,26 @@ class App extends React.Component {
     }
     return (
       <div className="App">
-        {/**Passing props to another component */}
         <Welcome name={'Syed Amaan Ali'}/>
         <h3>{this.state.name}</h3>
         <h3>{this.state.count}</h3>
         <button onClick={this.inc}>increment</button>
         {welcome}
         <button onClick={()=>this.setState({show:false})}>Remove above class component</button>
-        {/* <h3>{this.state.counter}</h3>
-        <button onClick={this.increment}>increment counter</button> */}
       </div>
     );
+  }*/
+
+  render(){
+    return(
+      <div className='App'>
+        <h1>Class Components using contructor</h1>
+        <h3>{this.state.counter}</h3>
+        <button onClick={this.increment}>Increment Counter</button>
+      </div>
+    )
   }
+
 }
 
 export default App;
